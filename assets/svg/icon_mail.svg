@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.71 30.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+      }
+
+      .cls-2 {
+        fill: #dac465;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="TOP">
+    <g>
+      <circle class="cls-2" cx="15.36" cy="15.36" r="15.36"/>
+      <g>
+        <path class="cls-1" d="m6.43,11.44v-1.18c0-.67.54-1.22,1.22-1.22h16.83c.67,0,1.22.54,1.22,1.22v10.2c0,.67-.54,1.22-1.22,1.22H7.65c-.67,0-1.22-.54-1.22-1.22v-1.07"/>
+        <path class="cls-1" d="m6.91,9.29l8.5,7.45c.38.33.94.34,1.33.02l8.73-7.23"/>
+        <line class="cls-1" x1="6.79" y1="21.31" x2="13.83" y2="15.36"/>
+        <line class="cls-1" x1="25.34" y1="21.31" x2="18.53" y2="15.27"/>
+        <line class="cls-1" x1="5.09" y1="14.09" x2="7.99" y2="14.09"/>
+        <line class="cls-1" x1="3.42" y1="16.74" x2="7.99" y2="16.74"/>
+      </g>
+    </g>
+  </g>
+</svg>
