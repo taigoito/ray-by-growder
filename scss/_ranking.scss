@@ -1,0 +1,56 @@
+/*
+ * Ranking
+ */
+
+.ranking {
+  @extend %__section;
+
+  &__inner {
+    @extend %__inner;
+  }
+
+  &__heading {
+    @extend %__heading;
+  }
+
+  &__products {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  &__item {
+    flex: 0 0 20%;
+    margin-bottom: 1.5rem;
+    padding: 0.375rem;
+  }
+
+  &__image img {
+    aspect-ratio: 0.8;
+    object-fit: cover;
+  }
+
+  &__info {
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 1.44;
+
+    a {
+      color: $primaryColor;
+      font-weight: 700;
+
+      &:hover {
+        color: $primaryLightColor;
+      }
+    }
+  }
+
+  &__name, &__price {
+    display: inline-block;
+    width: 11.25rem; // 60rem / 5 - [padding]
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

@@ -7,9 +7,9 @@
 }
 
 %__inner {
-  width: min(100%, 75rem); // 1200px 左右24pxずつpaddingで、内寸1152px
+  width: clamp(60rem, 100%, 75rem); // 1200px 左右24pxずつpaddingで、内寸1152px
   margin: auto;
-  padding: 0 clamp(0.75rem, 2%, 1.5rem);
+  padding: 0 clamp(1.2rem, 2%, 1.5rem);
 }
 
 %__heading {

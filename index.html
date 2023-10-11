@@ -83,17 +83,49 @@
           </template>
         </div>
       </section>
-      <section class="section">
-        <div class="section__container">
-          <ul class="products"></ul>
-          <template id="productsTemplate">
-            <li class="products__item">
-              <figure class="products__image">
-                <img src="">
+      <section class="newarrival">
+        <div class="newarrival__inner">
+          <h2 class="newarrival__heading">
+            <img src="./assets/svg/heading_newarrival.svg">
+            <span>[ 新着商品 ]</span>
+          </h2>
+          <ul class="newarrival__products"></ul>
+          <template id="newarrivalTemplate">
+            <li class="newarrival__item">
+              <figure class="newarrival__image">
+                <a href="">
+                  <img src="">
+                </a>
               </figure>
-              <div class="products__info">
-                <span class="products__name"></span>
-                <span class="products__price"></span>
+              <div class="newarrival__info">
+                <a href="">
+                  <span class="newarrival__name"></span>
+                  <span class="newarrival__price"></span>
+                </a>
+              </div>
+            </li>
+          </template>
+        </div>
+      </section>
+      <section class="ranking">
+        <div class="ranking__inner">
+          <h2 class="ranking__heading">
+            <img src="./assets/svg/heading_ranking.svg">
+            <span>[ ランキング ]</span>
+          </h2>
+          <ul class="ranking__products"></ul>
+          <template id="rankingTemplate">
+            <li class="ranking__item">
+              <figure class="ranking__image">
+                <a href="">
+                  <img src="">
+                </a>
+              </figure>
+              <div class="ranking__info">
+                <a href="">
+                  <span class="ranking__name"></span>
+                  <span class="ranking__price"></span>
+                </a>
               </div>
             </li>
           </template>
