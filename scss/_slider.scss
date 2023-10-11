@@ -2,9 +2,6 @@
  * Slider
  */
 
-$primary:              #1b2a44 !default;
-$primaryLight:         lighten($primary, 50%) !default;
-$white:                #ffffff !default;
 $sliderAspectRatio:    5 / 8 !default;
 
 .slider {
@@ -54,11 +51,11 @@ $sliderAspectRatio:    5 / 8 !default;
     margin: auto;
     border: 0;
     background-color: transparent;
-    color: $primaryLight;
+    color: $primaryLightColor;
     text-align: center;
     
     &:hover {
-      color: $primary;
+      color: $primaryColor;
     }
   }
 
@@ -84,11 +81,11 @@ $sliderAspectRatio:    5 / 8 !default;
     height: .5rem;
     margin: 0.75rem;
     border-radius: 50%;
-    background-color: $primary;
+    background-color: $primaryColor;
     cursor: pointer;
 
     &:not(.--current) {
-      background-color: $primaryLight;
+      background-color: $primaryLightColor;
     }
   }
 }

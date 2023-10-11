@@ -11,3 +11,20 @@
   margin: auto;
   padding: 0 clamp(0.75rem, 2%, 1.5rem);
 }
+
+%__heading {
+  img, span {
+    display: block;
+    padding-left: 1.5rem;
+  }
+
+  img {
+    width: auto;
+    height: 5.25rem;
+  }
+
+  span {
+    color: #a8a8a8;
+    font-size: 1rem;
+  }
+}

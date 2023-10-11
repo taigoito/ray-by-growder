@@ -62,10 +62,23 @@ button, input, select, textarea {
   padding: 1.5rem 0;
 }
 
-.header__inner {
+.news__inner, .header__inner {
   width: min(100%, 75rem);
   margin: auto;
   padding: 0 clamp(0.75rem, 2%, 1.5rem);
+}
+
+.news__heading img, .news__heading span {
+  display: block;
+  padding-left: 1.5rem;
+}
+.news__heading img {
+  width: auto;
+  height: 5.25rem;
+}
+.news__heading span {
+  color: #a8a8a8;
+  font-size: 1rem;
 }
 
 /*
@@ -243,4 +256,48 @@ button, input, select, textarea {
 }
 .slider__navItem:not(.--current) {
   background-color: #8ca6d2;
+}
+
+/*
+ * News
+ */
+.news {
+  padding: 4.5rem 0;
+  background-color: #efefef;
+}
+.news__inner {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 12rem;
+  background-color: #ffffff;
+}
+.news__heading {
+  position: absolute;
+  top: -3rem;
+  left: 0;
+}
+.news__feed {
+  list-style: none;
+  height: 18rem;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.news__feedItem {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #a8a8a8;
+}
+.news__date {
+  margin: 0;
+  color: #a8a8a8;
+}
+.news__content {
+  margin: 0;
+}
+.news__content a {
+  color: #1b2a44;
+  font-weight: 700;
+}
+.news__content a:hover {
+  color: #8ca6d2;
 }
