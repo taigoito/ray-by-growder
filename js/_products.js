@@ -8,8 +8,9 @@ export default class Products {
   
   constructor(url, options = {}) {
     // 設定
+    this.count = options.count || 10;
     this.elemName = options.elemName || 'products';
-    this.imageSize = options.imageSize || 180;
+    this.imageSize = options.imageSize || 300;
 
     // 要素
     this.elem = options.elem || document.querySelector(`.${this.elemName}`);
@@ -25,7 +26,7 @@ export default class Products {
   async fetch(url) {
     const res = await fetch(url);
     const data = await res.json();
-    const items = data.Items;
+    const items = data.Items.slice(0, this.count);
 
     this.render(items);
 
@@ -46,9 +47,15 @@ export default class Products {
       let imageUrl = item.smallImageUrls[0].imageUrl;
       imageUrl = imageUrl.replace('?_ex=64x64', `?_ex=${this.imageSize}x${this.imageSize}`);
 
+      // リンク設定
+      const anchors = clone.querySelectorAll('a');
+      anchors.forEach((a) => {
+        a.setAttribute('href', item.itemUrl);
+      });
+
       img.setAttribute('src', imageUrl);
       span1.textContent = item.itemName;
-      span2.textContent = `${item.itemPrice}円`;
+      span2.textContent = `${item.itemPrice.toLocaleString()}円 (税込)`;
 
       this.elem.appendChild(clone);
 
