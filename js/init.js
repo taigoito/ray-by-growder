@@ -35,3 +35,12 @@ const rankingArg = {
   template: document.getElementById('rankingTemplate')
 };
 new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&keyword=%E6%A5%BD%E5%A4%A9&genreId=555086&sort=-reviewCount&applicationId=${applicationId}`, rankingArg);
+
+// Recommend
+const recommendArg = {
+  count: 4,
+  elemName: 'recommend',
+  elem: document.querySelector('.recommend__products'),
+  template: document.getElementById('recommendTemplate')
+};
+new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=-reviewCount&applicationId=${applicationId}`, recommendArg);

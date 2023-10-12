@@ -1,0 +1,22 @@
+/*
+ * Instagram
+ */
+
+ .instagram {
+  @extend %__section;
+
+  &__inner {
+    @extend %__inner;
+  }
+
+  &__heading {
+    @extend %__heading;
+    margin: 3rem auto;
+    text-align: center;
+
+    img {
+      margin: auto;
+      padding: 0;
+    }
+  }
+}

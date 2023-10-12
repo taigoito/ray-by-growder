@@ -58,25 +58,25 @@ button, input, select, textarea {
 /*
  * Section
  */
-.ranking, .newarrival, .hero, .header {
+.instagram, .pickup, .recommend, .ranking, .newarrival, .hero, .header {
   padding: 1.5rem 0;
 }
 
-.concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__inner {
+.footer__secondaryInner, .footer__primaryInner, .instagram__inner, .pickup__inner, .recommend__inner, .concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__inner {
   width: clamp(60rem, 100%, 75rem);
   margin: auto;
   padding: 0 clamp(1.2rem, 2%, 1.5rem);
 }
 
-.ranking__heading img, .newarrival__heading img, .news__heading img, .ranking__heading span, .newarrival__heading span, .news__heading span {
+.instagram__heading img, .pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .instagram__heading span, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span {
   display: block;
   padding-left: 1.5rem;
 }
-.ranking__heading img, .newarrival__heading img, .news__heading img {
+.instagram__heading img, .pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img {
   width: auto;
   height: 5.25rem;
 }
-.ranking__heading span, .newarrival__heading span, .news__heading span {
+.instagram__heading span, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span {
   color: #a8a8a8;
   font-size: 1rem;
 }
@@ -441,4 +441,127 @@ button, input, select, textarea {
 .concept__instagramIcon {
   width: 1.5rem;
   filter: brightness(0) grayscale(1) invert(1);
+}
+
+/*
+ * Recommend
+ */
+.recommend {
+  background: linear-gradient(#ffffff 49.99%, #f4f4f4 50%);
+}
+.recommend__heading {
+  margin: 3rem auto;
+  text-align: center;
+}
+.recommend__heading img {
+  margin: auto;
+  padding: 0;
+}
+.recommend__products {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+}
+.recommend__item {
+  flex: 0 0 25%;
+  margin-bottom: 1.5rem;
+  padding: 0.375rem;
+}
+.recommend__image img {
+  aspect-ratio: 0.8;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recommend__info {
+  margin: 1.5rem auto;
+  text-align: center;
+  line-height: 1.44;
+}
+.recommend__info a {
+  color: #1b2a44;
+  font-weight: 700;
+}
+.recommend__info a:hover {
+  color: #8ca6d2;
+}
+.recommend__name, .recommend__price {
+  display: inline-block;
+  width: 14.25rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*
+ * Pickup
+ */
+.pickup {
+  background-color: #a8a8a8;
+}
+.pickup__heading {
+  margin: 3rem auto;
+  text-align: center;
+}
+.pickup__heading img {
+  margin: auto;
+  padding: 0;
+}
+.pickup__heading span {
+  color: #ffffff;
+}
+
+/*
+ * Instagram
+ */
+.instagram__heading {
+  margin: 3rem auto;
+  text-align: center;
+}
+.instagram__heading img {
+  margin: auto;
+  padding: 0;
+}
+
+/*
+ * Footer
+ */
+.footer__primaryInner {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1.5rem 0;
+  border-top: 1px solid #a8a8a8;
+}
+.footer__secondary {
+  background-color: #f4f4f4;
+}
+.footer__secondaryInner {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1.5rem 0;
+}
+.footer__generalInfo {
+  flex: 0 0 75%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1.5rem 0;
+}
+.footer__businessDay {
+  flex: 0 0 25%;
+  padding: 1.5rem 0;
+}
+.footer__shop, .footer__privacy {
+  flex: 0 0 90%;
+}
+.footer__guide, .footer__help, .footer__company {
+  flex: 0 0 30%;
+}
+.footer__payment, .footer__delivery, .footer__customer {
+  flex: 0 0 30%;
+}
+.footer__primaryHeading {
+  margin: 0;
+  color: #a8a8a8;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
