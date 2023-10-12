@@ -1,0 +1,83 @@
+/*
+ * Concept
+ */
+
+.concept {
+  position: relative;
+  background-color: $primaryColor;
+
+  &__inner {
+    @extend %__inner;
+  }
+
+  &__main, &__sub {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &__mainContent, &__subContent {
+    flex: 0 0 50%;
+    padding: 1.5rem 0;
+    color: $bodyBg;
+    text-align: center;
+  }
+
+  &__mainContent {
+    min-height: 33.33vw; // mainImageから割り出した比
+  }
+
+  &__mainImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
+
+  &__heading {
+    img, span {
+      display: inline-block;
+      padding-left: 1.5rem;
+    }
+  
+    img {
+      width: auto;
+      height: 5.25rem;
+    }
+  
+    span {
+      color: #a8a8a8;
+      font-size: 1rem;
+      vertical-align: sub;
+    }
+  }
+
+  &__mainText, &__subText {
+    margin: 3rem auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__mainText {
+    font-size: 1.33rem;
+  }
+
+  &__sub {
+    padding: 3rem 0;
+  }
+
+  &__subImage {
+    flex: 0 0 60%;
+  }
+
+  &__subContent {
+    flex: 0 0 30%;
+  }
+
+  &__instagramIcon {
+    width: 1.5rem;
+    filter: brightness(0) grayscale(1) invert(1);
+  }
+}

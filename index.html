@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__inner">
         <h1 class="header__logo"><img src="./assets/svg/logo_ray.svg"></h1>
         <nav class="header__nav">
@@ -50,7 +50,7 @@
       </div>
     </header>
     <main>
-      <header class="hero">
+      <header id="hero" class="hero">
         <div class="slider" data-is-header="true">
           <ul class="slider__inner">
             <li class="slider__item">
@@ -68,7 +68,7 @@
           </ul>
         </div>
       </header>
-      <section class="news">
+      <section id="news" class="news">
         <div class="news__inner">
           <h2 class="news__heading">
             <img src="./assets/svg/heading_news.svg">
@@ -83,7 +83,7 @@
           </template>
         </div>
       </section>
-      <section class="newarrival">
+      <section id="newarrival" class="newarrival">
         <div class="newarrival__inner">
           <h2 class="newarrival__heading">
             <img src="./assets/svg/heading_newarrival.svg">
@@ -107,7 +107,7 @@
           </template>
         </div>
       </section>
-      <section class="ranking">
+      <section id="ranking" class="ranking">
         <div class="ranking__inner">
           <h2 class="ranking__heading">
             <img src="./assets/svg/heading_ranking.svg">
@@ -131,7 +131,40 @@
           </template>
         </div>
       </section>
+      <section id="concept" class="concept">
+        <div class="concept__inner">
+          <div class="concept__main">
+            <div class="concept__mainContent">
+              <h2 class="concept__heading">
+                <img src="./assets/svg/heading_concept.svg">
+                <span>[ コンセプト ]</span>
+              </h2>
+              <div class="concept__mainText">
+                <p>キャッチコピーが入ります。</p>
+                <p>キャッチコピーが入ります。</p>
+              </div>
+              <div class="concept__subText">
+                <p>簡単なコンセプト文章が入ります。簡単なコンセプト文章が入ります。</p>
+                <p>簡単なコンセプト文章が入ります。簡単なコンセプト文章が入ります。</p>
+                <p>簡単なコンセプト文章が入ります。</p>
+              </div>
+            </div>
+            <div class="concept__mainImage">
+              <img src="./assets/sample/sampleLargeImage00.jpg">
+            </div>
+          </div>
+          <div class="concept__sub">
+            <div class="concept__subImage">
+              <img src="./assets/sample/sampleLargeImage01.jpg">
+            </div>
+            <div class="concept__subContent">
+              <p><img class="concept__instagramIcon" src="./assets/svg/icon_instagram_sm.svg"></p>
+              <p>Linked in Instagram from RAY</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="./js/init.js" type="module"></script>
+    <script src="./init.js"></script>
   </body>
 </html>

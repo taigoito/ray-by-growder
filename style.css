@@ -62,7 +62,7 @@ button, input, select, textarea {
   padding: 1.5rem 0;
 }
 
-.ranking__inner, .newarrival__inner, .news__inner, .header__inner {
+.concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__inner {
   width: clamp(60rem, 100%, 75rem);
   margin: auto;
   padding: 0 clamp(1.2rem, 2%, 1.5rem);
@@ -378,4 +378,67 @@ button, input, select, textarea {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+/*
+ * Concept
+ */
+.concept {
+  position: relative;
+  background-color: #1b2a44;
+}
+.concept__main, .concept__sub {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.concept__mainContent, .concept__subContent {
+  flex: 0 0 50%;
+  padding: 1.5rem 0;
+  color: #ffffff;
+  text-align: center;
+}
+.concept__mainContent {
+  min-height: 33.33vw;
+}
+.concept__mainImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.concept__heading img, .concept__heading span {
+  display: inline-block;
+  padding-left: 1.5rem;
+}
+.concept__heading img {
+  width: auto;
+  height: 5.25rem;
+}
+.concept__heading span {
+  color: #a8a8a8;
+  font-size: 1rem;
+  vertical-align: sub;
+}
+.concept__mainText, .concept__subText {
+  margin: 3rem auto;
+}
+.concept__mainText p, .concept__subText p {
+  margin: 0;
+}
+.concept__mainText {
+  font-size: 1.33rem;
+}
+.concept__sub {
+  padding: 3rem 0;
+}
+.concept__subImage {
+  flex: 0 0 60%;
+}
+.concept__subContent {
+  flex: 0 0 30%;
+}
+.concept__instagramIcon {
+  width: 1.5rem;
+  filter: brightness(0) grayscale(1) invert(1);
 }
