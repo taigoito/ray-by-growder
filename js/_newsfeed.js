@@ -28,21 +28,21 @@ export default class Newsfeed {
 
 
   render(data) {
-    data.forEach((dt) => {
-      //console.log(dt);
+    const keys = Object.keys(data);
+    keys.forEach((key) => {
+      //console.log(data[key]);
 
       const clone = this.template.content.cloneNode(true);
       const p1 = clone.querySelector('.news__date');
       const p2 = clone.querySelector('.news__content');
       const a = document.createElement('a');
 
-      p1.textContent = dt.date;
+      p1.textContent = key;
       p2.appendChild(a);
-      a.setAttribute('href', dt.link);
-      a.textContent = dt.content;
+      a.setAttribute('href', data[key].href);
+      a.textContent = data[key].text;
 
-      this.elem.appendChild(clone);
-
+      this.elem.insertBefore(clone, this.elem.firstChild);
     });
   }
 }
