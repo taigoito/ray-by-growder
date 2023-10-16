@@ -35,12 +35,17 @@ export default class Newsfeed {
       const clone = this.template.content.cloneNode(true);
       const p1 = clone.querySelector('.news__date');
       const p2 = clone.querySelector('.news__content');
-      const a = document.createElement('a');
 
       p1.textContent = key;
-      p2.appendChild(a);
-      a.setAttribute('href', data[key].href);
-      a.textContent = data[key].text;
+
+      if (data[key].href !== '') {
+        const a = document.createElement('a');
+        a.setAttribute('href', data[key].href);
+        a.textContent = data[key].text;
+        p2.appendChild(a);
+      } else {
+        p2.textContent = data[key].text;
+      }
 
       this.elem.insertBefore(clone, this.elem.firstChild);
     });
