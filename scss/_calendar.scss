@@ -1,0 +1,44 @@
+/*
+ * Calendar
+ */
+
+.calendar {
+  width: 18rem;
+  margin: 0.75rem auto;
+
+  &__view {
+    margin: auto;
+
+    tr {
+      border-bottom: 1px solid #999999;
+
+      &:first-child {
+        border-top: 1px solid #999999;
+      }
+    }
+
+    th, td {
+      width: 40px;
+      height: 24px;
+      border-right: 1px solid #999999;
+      color: $primaryColor;
+      font-weight: 700;
+      text-align: center;
+
+      &:first-child {
+        border-left: 1px solid #999999;
+        //color: red;
+      }
+    
+      &:last-child {
+        //color: blue;
+      }
+    }
+
+    td {
+      &[data-state="0"], &[data-state="1"] {
+        background: rgba(255, 128, 128, .3);
+      }
+    }
+  }
+}

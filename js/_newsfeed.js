@@ -19,7 +19,7 @@ export default class Newsfeed {
 
 
   async fetch(url) {
-    const res = await fetch(url);
+    const res = await fetch(`${url}datecontent.json`);
     const data = await res.json();
 
     this.render(data);

@@ -5,7 +5,7 @@
  */
 
 // Config
-import { applicationId, shopCode, newsfeedUrl } from './config.js';
+import { applicationId, shopCode, url } from './config.js';
 
 // Slider
 import Slider from './_slider.js';
@@ -13,7 +13,7 @@ new Slider();
 
 // News feed
 import Newsfeed from './_newsfeed.js';
-new Newsfeed(newsfeedUrl);
+new Newsfeed(url);
 
 // Products
 import Products from './_products.js';
@@ -44,3 +44,10 @@ const recommendArg = {
   template: document.getElementById('recommendTemplate')
 };
 new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=-reviewCount&applicationId=${applicationId}`, recommendArg);
+
+// Calendar
+import BusinessCalendar from './_businessCalendar.js';
+const calendar = document.querySelectorAll('.calendar');
+calendar.forEach((elem, i) => {
+  new BusinessCalendar({elem: elem, month: i, url: url});
+});

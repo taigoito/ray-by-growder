@@ -565,3 +565,34 @@ button, input, select, textarea {
   font-size: 1rem;
   text-transform: uppercase;
 }
+
+/*
+ * Calendar
+ */
+.calendar {
+  width: 18rem;
+  margin: 0.75rem auto;
+}
+.calendar__view {
+  margin: auto;
+}
+.calendar__view tr {
+  border-bottom: 1px solid #999999;
+}
+.calendar__view tr:first-child {
+  border-top: 1px solid #999999;
+}
+.calendar__view th, .calendar__view td {
+  width: 40px;
+  height: 24px;
+  border-right: 1px solid #999999;
+  color: #1b2a44;
+  font-weight: 700;
+  text-align: center;
+}
+.calendar__view th:first-child, .calendar__view td:first-child {
+  border-left: 1px solid #999999;
+}
+.calendar__view td[data-state="0"], .calendar__view td[data-state="1"] {
+  background: rgba(255, 128, 128, 0.3);
+}

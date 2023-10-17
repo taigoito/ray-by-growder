@@ -36,7 +36,7 @@ export default class Products {
   render(items) {
     items.forEach((item) => {
       item = item.Item;
-      console.log(item);
+      //console.log(item);
 
       const clone = this.template.content.cloneNode(true);
       const img = clone.querySelector(`.${this.elemName}__image img`);
