@@ -7,9 +7,10 @@
 // Config
 import { applicationId, shopCode, url } from './config.js';
 
-// Slider
-import Slider from './_slider.js';
-new Slider();
+// Main Slider
+import MainSlider from './_mainSlider.js';
+const mainSlider = document.getElementById('mainSlider');
+new MainSlider(mainSlider);
 
 // News feed
 import Newsfeed from './_newsfeed.js';
