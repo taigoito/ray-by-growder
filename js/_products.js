@@ -6,11 +6,12 @@
 
 export default class Products {
   
-  constructor(url, options = {}) {
+  constructor(url, options = {}, callback) {
     // 設定
     this.count = options.count || 10;
     this.elemName = options.elemName || 'products';
     this.imageSize = options.imageSize || 300;
+    this.callback = callback;
 
     // 要素
     this.elem = options.elem || document.querySelector(`.${this.elemName}`);
@@ -29,6 +30,7 @@ export default class Products {
     const items = data.Items.slice(0, this.count);
 
     this.render(items);
+    if (typeof this.callback === 'function') this.callback();
 
   }
 

@@ -18,6 +18,8 @@ new Newsfeed(url);
 
 // Products
 import Products from './_products.js';
+// Recommend Slider
+import RecommendSlider from './_recommendSlider.js';
 
 // New Arrival
 const newarrivalArg = {
@@ -38,13 +40,17 @@ const rankingArg = {
 new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&keyword=%E6%A5%BD%E5%A4%A9&genreId=555086&sort=-reviewCount&applicationId=${applicationId}`, rankingArg);
 
 // Recommend
+const recommendSlider = document.getElementById('recommendSlider');
 const recommendArg = {
-  count: 4,
+  count: 8,
   elemName: 'recommend',
-  elem: document.querySelector('.recommend__products'),
+  elem: recommendSlider.querySelector('.slider__inner'),
   template: document.getElementById('recommendTemplate')
 };
-new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=-reviewCount&applicationId=${applicationId}`, recommendArg);
+const callback = () => {
+  new RecommendSlider(recommendSlider);
+}
+new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=-reviewCount&applicationId=${applicationId}`, recommendArg, callback);
 
 // Calendar
 import BusinessCalendar from './_businessCalendar.js';

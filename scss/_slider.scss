@@ -31,7 +31,9 @@ $sliderAspectRatio:    5 / 8 !default;
     transition: opacity 0.15s linear;
     
     &:not(.--current) {
-      opacity: .85;
+      #mainSlider & {
+        opacity: .85;
+      }
     }
 
     img {
@@ -57,6 +59,10 @@ $sliderAspectRatio:    5 / 8 !default;
     &:hover {
       color: $primaryColor;
     }
+
+    #mainSlider & {
+      display: none;
+    }
   }
 
   &__prev {
@@ -76,6 +82,10 @@ $sliderAspectRatio:    5 / 8 !default;
     height: 1rem;
     margin: 0.75rem auto;
     padding: 0;
+
+    #recommend & {
+      display: none;
+    }
   }
 
   &__navItem {

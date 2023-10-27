@@ -211,7 +211,7 @@ button, input, select, textarea {
   opacity: 1;
   transition: opacity 0.15s linear;
 }
-.slider__item:not(.--current) {
+#mainSlider .slider__item:not(.--current) {
   opacity: 0.85;
 }
 .slider__item img {
@@ -236,6 +236,9 @@ button, input, select, textarea {
 .slider__prev:hover, .slider__next:hover {
   color: #1b2a44;
 }
+#mainSlider .slider__prev, #mainSlider .slider__next {
+  display: none;
+}
 .slider__prev {
   left: 0;
 }
@@ -251,6 +254,9 @@ button, input, select, textarea {
   height: 1rem;
   margin: 0.75rem auto;
   padding: 0;
+}
+#recommend .slider__nav {
+  display: none;
 }
 .slider__navItem img {
   width: 10.5rem;
@@ -455,6 +461,9 @@ button, input, select, textarea {
 .recommend {
   background: linear-gradient(#ffffff 49.99%, #f4f4f4 50%);
 }
+.recommend__inner {
+  overflow: hidden;
+}
 .recommend__heading {
   margin: 3rem auto;
   text-align: center;
@@ -463,23 +472,17 @@ button, input, select, textarea {
   margin: auto;
   padding: 0;
 }
-.recommend__products {
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 0;
-}
-.recommend__item {
-  flex: 0 0 25%;
-  margin-bottom: 1.5rem;
-  padding: 0.375rem;
+.recommend__image {
+  margin: 0;
 }
 .recommend__image img {
+  width: 15rem;
   aspect-ratio: 0.8;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .recommend__info {
+  width: 12rem;
   margin: 1.5rem auto;
   text-align: center;
   line-height: 1.44;

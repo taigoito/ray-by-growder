@@ -170,22 +170,24 @@
             <img src="./assets/svg/heading_recommend.svg">
             <span>[ おすすめアイテム ]</span>
           </h2>
-          <ul class="recommend__products"></ul>
-          <template id="recommendTemplate">
-            <li class="recommend__item">
-              <figure class="recommend__image">
-                <a href="">
-                  <img src="">
-                </a>
-              </figure>
-              <div class="recommend__info">
-                <a href="">
-                  <span class="recommend__name"></span>
-                  <span class="recommend__price"></span>
-                </a>
-              </div>
-            </li>
-          </template>
+          <div id="recommendSlider" class="slider" data-gap="48">
+            <ul class="slider__inner"></ul>
+            <template id="recommendTemplate">
+              <li class="slider__item">
+                <figure class="recommend__image">
+                  <a href="">
+                    <img src="">
+                  </a>
+                </figure>
+                <div class="recommend__info">
+                  <a href="">
+                    <span class="recommend__name"></span>
+                    <span class="recommend__price"></span>
+                  </a>
+                </div>
+              </li>
+            </template>
+          </div>
         </div>
       </section>
       <section id="pickup" class="pickup">
@@ -287,6 +289,6 @@
         </div>
       </div>
     </footer>
-    <script src="./init.js"></script>
+    <script src="./js/init.js" type="module"></script>
   </body>
 </html>
