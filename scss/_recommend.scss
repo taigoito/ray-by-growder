@@ -4,6 +4,7 @@
 
 .recommend {
   @extend %__section;
+  padding-bottom: 4.5rem;
   background: linear-gradient(#ffffff 49.99%, #f4f4f4 50%);
 
   &__inner {

@@ -13,19 +13,19 @@ export default class MainSlider extends Slider {
     this._prev = document.createElement('a');
     this._prev.classList.add('slider__prev');
     this._prev.setAttribute('href', '#');
-    const prevIcon = document.createElement('span');
-    prevIcon.dataset.icon = 'ei-chevron-left';
-    prevIcon.dataset.size = 'l';
-    this._prev.appendChild(prevIcon);
+    //const prevIcon = document.createElement('span');
+    //prevIcon.dataset.icon = 'ei-chevron-left';
+    //prevIcon.dataset.size = 'l';
+    //this._prev.appendChild(prevIcon);
 
     // .slider__next
     this._next = document.createElement('a');
     this._next.classList.add('slider__next');
     this._next.setAttribute('href', '#');
-    const nextIcon = document.createElement('span');
-    nextIcon.dataset.icon = 'ei-chevron-right';
-    nextIcon.dataset.size = 'l';
-    this._next.appendChild(nextIcon);
+    //const nextIcon = document.createElement('span');
+    //nextIcon.dataset.icon = 'ei-chevron-right';
+    //nextIcon.dataset.size = 'l';
+    //this._next.appendChild(nextIcon);
 
     // .slider__nav
     this._nav = document.createElement('ul');

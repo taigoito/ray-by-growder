@@ -224,17 +224,28 @@ button, input, select, textarea {
 .slider__prev, .slider__next {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 4.5rem;
   display: block;
-  height: 4.5rem;
+  width: 3rem;
+  height: 3rem;
   margin: auto;
   border: 0;
-  background-color: transparent;
-  color: #8ca6d2;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
   text-align: center;
 }
 .slider__prev:hover, .slider__next:hover {
-  color: #1b2a44;
+  background-color: #8ca6d2;
+}
+.slider__prev::after, .slider__next::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5625rem 0.75rem;
+}
+.slider__prev:hover::after, .slider__next:hover::after {
+  filter: brightness(2);
 }
 #mainSlider .slider__prev, #mainSlider .slider__next {
   display: none;
@@ -242,8 +253,14 @@ button, input, select, textarea {
 .slider__prev {
   left: 0;
 }
+.slider__prev::after {
+  background: url("./assets/svg/icon_left.svg") no-repeat 50% 50%/contain scroll;
+}
 .slider__next {
   right: 0;
+}
+.slider__next::after {
+  background: url("./assets/svg/icon_right.svg") no-repeat 50% 50%/contain scroll;
 }
 .slider__nav {
   position: relative;
@@ -459,6 +476,7 @@ button, input, select, textarea {
  * Recommend
  */
 .recommend {
+  padding-bottom: 4.5rem;
   background: linear-gradient(#ffffff 49.99%, #f4f4f4 50%);
 }
 .recommend__inner {

@@ -47,17 +47,30 @@ $sliderAspectRatio:    5 / 8 !default;
   &__prev, &__next {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 4.5rem;
     display: block;
-    height: 4.5rem; // アイコンのサイズ
+    width: 3rem;
+    height: 3rem;
     margin: auto;
     border: 0;
-    background-color: transparent;
-    color: $primaryLightColor;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
     text-align: center;
-    
+
     &:hover {
-      color: $primaryColor;
+      background-color: $primaryLightColor;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: 0.5625rem 0.75rem;
+    }
+
+    &:hover::after {
+      filter: brightness(2);
     }
 
     #mainSlider & {
@@ -67,10 +80,18 @@ $sliderAspectRatio:    5 / 8 !default;
 
   &__prev {
     left: 0;
+
+    &::after {
+      background: url("./assets/svg/icon_left.svg") no-repeat 50% 50% / contain scroll;
+    }
   }
 
   &__next {
     right: 0;
+
+    &::after {
+      background: url("./assets/svg/icon_right.svg") no-repeat 50% 50% / contain scroll;
+    }
   }
   
   &__nav {
