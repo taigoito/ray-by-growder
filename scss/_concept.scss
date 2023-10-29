@@ -80,4 +80,25 @@
     width: 1.5rem;
     filter: brightness(0) grayscale(1) invert(1);
   }
+
+  &__viewmore {
+    @extend %__viewmore;
+    border-color: #ffffff;
+    background-color: $primaryColor;
+    color: #ffffff;
+    margin: auto;
+
+    &::after {
+      filter: brightness(2);
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: $primaryColor;
+
+      &::after {
+        filter: none;
+      }
+    }
+  }
 }

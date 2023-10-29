@@ -57,10 +57,6 @@ $sliderAspectRatio:    5 / 8 !default;
     background-color: #ffffff;
     text-align: center;
 
-    &:hover {
-      background-color: $primaryLightColor;
-    }
-
     &::after {
       content: "";
       display: block;
@@ -69,8 +65,12 @@ $sliderAspectRatio:    5 / 8 !default;
       margin: 0.5625rem 0.75rem;
     }
 
-    &:hover::after {
-      filter: brightness(2);
+    &:hover {
+      background-color: $primaryLightColor;
+
+      &::after {
+        filter: brightness(2);
+      }
     }
 
     #mainSlider & {

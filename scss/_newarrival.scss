@@ -7,14 +7,22 @@
 
   &__inner {
     @extend %__inner;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   &__heading {
     @extend %__heading;
+    flex: 0 0 24rem;
+    order: 0;
   }
 
   &__products {
     list-style: none;
+    flex: 0 0 100%;
+    order: 2;
     display: flex;
     flex-flow: row wrap;
     padding: 0;
@@ -52,5 +60,12 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+
+  &__viewmore {
+    @extend %__viewmore;
+    flex: 0 0 13.5rem;
+    order: 1;
+    margin: 1.5rem 0;
   }
 }
