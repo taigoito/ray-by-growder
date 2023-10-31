@@ -52,6 +52,10 @@ const callback = () => {
 }
 new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=-reviewCount&applicationId=${applicationId}`, recommendArg, callback);
 
+// Pickup
+import Pickup from './_pickup.js';
+new Pickup(url);
+
 // Calendar
 import BusinessCalendar from './_businessCalendar.js';
 const calendar = document.querySelectorAll('.calendar');

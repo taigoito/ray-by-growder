@@ -595,18 +595,79 @@ button, input, select, textarea {
  * Pickup
  */
 .pickup {
-  background-color: #a8a8a8;
+  background-color: #a4a8b2;
+}
+.pickup__inner {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3.33%;
+  padding: 1.5rem;
+}
+.pickup__intro {
+  flex: 0 0 30%;
+  order: 1;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pickup__intro img {
+  width: 6rem;
+  margin: 0 auto;
+}
+.pickup__intro p {
+  width: 16.5rem;
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 1.17rem;
 }
 .pickup__heading {
-  margin: 3rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 .pickup__heading img {
+  width: auto;
   margin: auto;
   padding: 0;
 }
 .pickup__heading span {
   color: #ffffff;
+}
+.pickup__item {
+  flex: 0 0 30%;
+  border: 1px solid #ffffff;
+  margin-bottom: 1.5rem;
+}
+.pickup__item:nth-of-type(1) {
+  order: 0;
+}
+.pickup__item:nth-of-type(2) {
+  order: 2;
+}
+.pickup__item:nth-of-type(3) {
+  order: 3;
+}
+.pickup__item:nth-of-type(4) {
+  order: 4;
+}
+.pickup__item:nth-of-type(5) {
+  order: 5;
+}
+.pickup__item a:hover {
+  opacity: 0.85;
+}
+.pickup__item img {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pickup__item figcaption {
+  height: 4.5rem;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-size: 0.875rem;
 }
 
 /*

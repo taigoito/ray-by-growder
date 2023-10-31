@@ -4,24 +4,84 @@
 
  .pickup {
   @extend %__section;
-  background-color: #a8a8a8;
+  background-color: #a4a8b2;
 
   &__inner {
     @extend %__inner;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3.33%;
+    padding: 1.5rem;
+  }
+
+  &__intro {
+    flex: 0 0 30%;
+    order: 1;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 6rem;
+      margin: 0 auto;
+    }
+
+    p {
+      width: 16.5rem;
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 1.17rem;
+    }
   }
 
   &__heading {
     @extend %__heading;
-    margin: 3rem auto;
+    margin: 0 auto;
     text-align: center;
 
     img {
+      width: auto;
       margin: auto;
       padding: 0;
     }
 
     span {
       color: $bodyBg;
+    }
+  }
+
+  &__item {
+    flex: 0 0 30%;
+    border: 1px solid #ffffff;
+    margin-bottom: 1.5rem;
+
+    &:nth-of-type(1) {
+      order: 0;
+    }
+
+    @for $i from 2 through 5 {
+      &:nth-of-type(#{$i}) {
+        order: $i;
+      }
+    }
+
+    a:hover {
+      opacity: 0.85;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    figcaption {
+      height: 4.5rem;
+      padding: 0.75rem;
+      color: #ffffff;
+      font-size: 0.875rem;
     }
   }
 }
