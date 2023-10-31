@@ -21,9 +21,53 @@
   }
 
   &__item {
+    position: relative;
     flex: 0 0 20%;
     margin-bottom: 1.5rem;
     padding: 0.375rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0.375rem;
+      left: 0.375rem;
+      width: 2.25rem;
+      height: 2.25rem;
+      background-color: $primaryColor;
+      color: #ffffff;
+      text-align: center;
+      line-height: 2.25rem;
+    }
+
+    &:nth-child(1)::after {
+      top: -0.75rem;
+      left: 0.75rem;
+      width: 3rem;
+      height: 3rem;
+      background: url("./assets/svg/ranking_1.svg") no-repeat 50% 50% / contain scroll;
+    }
+
+    &:nth-child(2)::after {
+      top: -0.75rem;
+      left: 0.75rem;
+      width: 3rem;
+      height: 3rem;
+      background: url("./assets/svg/ranking_2.svg") no-repeat 50% 50% / contain scroll;
+    }
+
+    &:nth-child(3)::after {
+      top: -0.75rem;
+      left: 0.75rem;
+      width: 3rem;
+      height: 3rem;
+      background: url("./assets/svg/ranking_3.svg") no-repeat 50% 50% / contain scroll;
+    }
+
+    @for $i from 4 through 10 {
+      &:nth-child(#{$i})::after {
+        content: "#{$i}";
+      }
+    }
   }
 
   &__image img {
