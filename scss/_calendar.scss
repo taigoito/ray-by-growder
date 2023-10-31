@@ -41,4 +41,18 @@
       }
     }
   }
+
+  &__description {
+    padding: 0 0.75rem;
+    font-size: 0.75rem;
+
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 0.375rem;
+      background-color: rgba(255, 128, 128, .3);
+      vertical-align: middle;
+    }
+  }
 }
