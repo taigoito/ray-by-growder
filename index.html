@@ -9,20 +9,8 @@
   </head>
   <body>
     <header id="header" class="header">
-      <div class="header__inner">
+      <div class="header__topInner">
         <h1 class="header__logo"><img src="./assets/svg/logo_ray.svg"></h1>
-        <nav class="header__nav">
-          <ul class="header__primaryMenu">
-            <li class="header__primaryMenuItem"><a href="">concept</a></li>
-            <li class="header__primaryMenuItem"><a href="">pickup</a></li>
-            <li class="header__primaryMenuItem"><a href="">ranking</a></li>
-            <li class="header__primaryMenuItem"><a href="">items</a></li>
-            <li class="header__primaryMenuItem"><a href="">brand</a></li>
-            <li class="header__primaryMenuItem"><a href="">company</a></li>
-            <li class="header__primaryMenuItem"><a href="">guide</a></li>
-            <li class="header__primaryMenuItem"><a href="">review</a></li>
-          </ul>
-        </nav>
         <div class="header__sub">
           <ul class="header__socialLinks">
             <li class="header__socialLink --rakuten">
@@ -47,6 +35,30 @@
             <input class="header__searchInput" type="search" placeholder="何をお探しですか？">
           </div>
         </div>
+      </div>
+      <div class="header__bottomInner">
+        <nav class="header__nav">
+          <ul class="header__primaryMenu">
+            <li class="header__primaryMenuItem"><a href="#">concept</a></li>
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="pickupmenu">pickup
+              <div id="pickupmenu" class="header__submenu --collapse">
+                <div class="header__submenuInner"></div>
+              </div>
+            </a></li>
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="rankingmenu">ranking
+              <div id="rankingmenu" class="header__submenu --collapse">
+                <div class="header__submenuInner"></div>
+              </div></a></li>
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="itemsmenu">items
+              <div id="itemsmenu" class="header__submenu --collapse">
+                <div class="header__submenuInner"></div>
+              </div></a></li>
+            <li class="header__primaryMenuItem"><a href="#">brand</a></li>
+            <li class="header__primaryMenuItem"><a href="#">company</a></li>
+            <li class="header__primaryMenuItem"><a href="#">guide</a></li>
+            <li class="header__primaryMenuItem"><a href="#">review</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
