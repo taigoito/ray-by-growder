@@ -19,7 +19,8 @@
     @extend %__inner;
     display: flex;
     flex-flow: row wrap;
-    padding: 1.5rem 0;
+    gap: 3rem;
+    padding: 3rem 0;
   }
 
   &__generalInfo {
@@ -115,5 +116,85 @@
 
   &__payment, &__delivery, &__customer {
     flex: 0 0 30%;
+  }
+
+  &__secondaryHead {
+    position: relative;
+    height: 3rem;
+    padding: 0.375rem 0;
+    border-bottom: 2px solid $primaryColor;
+  }
+
+  &__secondaryBody {
+    font-size: 0.875rem;
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  &__secondaryHeading {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  &__detailButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7.5rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid $primaryColor;
+    background-color: #ffffff;
+    color: $primaryColor;
+    font-size: 0.75rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0.375rem;
+      bottom: 0;
+      width: 0.75rem;
+      height: 0.75rem;
+      margin: auto;
+      background: url("./assets/svg/icon_right.svg") no-repeat 50% 50% / contain scroll;
+    }
+
+    &:hover {
+      background-color: $primaryColor;
+      color: #ffffff;
+
+      &::after {
+        filter: brightness(2);
+      }
+    }
+  }
+
+  &__banners {
+    flex: 90%;
+    display: flex;
+  }
+
+  &__banner {
+    flex: 50%;
+
+    a {
+      display: block;
+      padding: 0.75rem 3rem 1.5rem;
+      border: 1px solid #333333;
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    p {
+      color: #666666;
+      font-size: 0.875rem;
+    }
+
+    img {
+      width: 15rem;
+    }
   }
 }
