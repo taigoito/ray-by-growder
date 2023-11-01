@@ -15,6 +15,8 @@ export default class Ranking extends Products {
     const template = document.getElementById('rankingMenuTemplate');
     if (!elem || !template) return;
 
+    items = items.slice(0, 5);
+
     items.forEach((item) => {
       item = item.Item;
       //console.log(item);

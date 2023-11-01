@@ -42,37 +42,47 @@
             <li class="header__primaryMenuItem"><a href="#">concept</a></li>
             <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="pickupMenu">pickup
               <div id="pickupMenu" class="header__submenu --collapse">
-                <div class="header__submenuInner"></div>
-                <template id="pickupMenuTemplate">
-                  <figure class="header__pickupMenuItem"><a href="#">
-                    <img src="">
-                  </a></figure>
-                </template>
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner"></div>
+                  <template id="pickupMenuTemplate">
+                    <figure class="header__pickupMenuItem"><a href="#">
+                      <img src="">
+                    </a></figure>
+                  </template>
+                </div>
               </div>
             </a></li>
             <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="rankingMenu">ranking
               <div id="rankingMenu" class="header__submenu --collapse">
-                <div class="header__submenuInner"></div>
-                <template id="rankingMenuTemplate">
-                  <li class="header__rankingMenuItem">
-                    <figure class="header__rankingMenuImage">
-                      <a href="">
-                        <img src="">
-                      </a>
-                    </figure>
-                    <div class="header__rankingMenuInfo">
-                      <a href="">
-                        <span class="header__rankingMenuName"></span>
-                        <span class="header__rankingMenuPrice"></span>
-                      </a>
-                    </div>
-                  </li>
-                </template>
-              </div></a></li>
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner"></div>
+                  <template id="rankingMenuTemplate">
+                    <li class="header__rankingMenuItem">
+                      <figure class="header__rankingMenuImage">
+                        <a href="">
+                          <img src="">
+                        </a>
+                      </figure>
+                      <div class="header__rankingMenuInfo">
+                        <a href="">
+                          <span class="header__rankingMenuName"></span>
+                          <span class="header__rankingMenuPrice"></span>
+                        </a>
+                      </div>
+                    </li>
+                  </template>
+                </div>
+              </div>
+            </a></li>
             <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="itemsMenu">items
               <div id="itemsMenu" class="header__submenu --collapse">
-                <div class="header__submenuInner"></div>
-              </div></a></li>
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner">
+                    
+                  </div>
+                </div>
+              </div>
+            </a></li>
             <li class="header__primaryMenuItem"><a href="#">brand</a></li>
             <li class="header__primaryMenuItem"><a href="#">company</a></li>
             <li class="header__primaryMenuItem"><a href="#">guide</a></li>
@@ -246,14 +256,14 @@
           </a></figure>
         </template>
       </section>
-      <section id="instagram" class="instagram">
+      <!--<section id="instagram" class="instagram">
         <div class="instagram__inner">
           <h2 class="instagram__heading">
             <img src="./assets/svg/heading_instagram.svg">
             <span>[ RAY公式インスタグラム ]</span>
           </h2>
         </div>
-      </section>
+      </section>-->
     </main>
     <footer id="footer" class="footer">
       <div class="footer__primary">
@@ -403,6 +413,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/init.js" type="module"></script>
+    <script src="./init.js"></script>
   </body>
 </html>

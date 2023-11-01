@@ -17,6 +17,12 @@ export default class MainMenu {
 
   handleEvents() {
     this.elems.forEach((elem) => {
+      elem.addEventListener('click', (event) => {
+        event.preventDefault();
+      });
+    });
+
+    this.elems.forEach((elem) => {
       elem.addEventListener('mouseenter', (event) => {
         event.preventDefault();
         const target = event.target.dataset.target;
@@ -35,14 +41,18 @@ export default class MainMenu {
 
   show(target) {
     const menu = document.getElementById(target);
+    const inner = menu.querySelector('.header__submenuInner');
     menu.classList.remove('--collapse');
+    inner.classList.remove('--collapse');
 
   }
 
 
   hide(target) {
     const menu = document.getElementById(target);
+    const inner = menu.querySelector('.header__submenuInner');
     menu.classList.add('--collapse');
+    inner.classList.add('--collapse');
     
   }
 
