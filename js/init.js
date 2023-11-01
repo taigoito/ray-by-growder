@@ -7,6 +7,10 @@
 // Config
 import { applicationId, shopCode, url } from './config.js';
 
+// Main Menu
+import MainMenu from './_mainMenu.js';
+new MainMenu(url, `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`);
+
 // Main Slider
 import MainSlider from './_mainSlider.js';
 const mainSlider = document.getElementById('mainSlider');
@@ -18,6 +22,10 @@ new Newsfeed(url);
 
 // Products
 import Products from './_products.js';
+
+// Ranking
+import Ranking from './_ranking.js';
+
 // Recommend Slider
 import RecommendSlider from './_recommendSlider.js';
 
@@ -37,7 +45,7 @@ const rankingArg = {
   elem: document.querySelector('.ranking__products'),
   template: document.getElementById('rankingTemplate')
 };
-new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`, rankingArg);
+new Ranking(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`, rankingArg);
 
 // Recommend
 const recommendSlider = document.getElementById('recommendSlider');

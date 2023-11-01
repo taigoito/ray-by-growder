@@ -40,17 +40,37 @@
         <nav class="header__nav">
           <ul class="header__primaryMenu">
             <li class="header__primaryMenuItem"><a href="#">concept</a></li>
-            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="pickupmenu">pickup
-              <div id="pickupmenu" class="header__submenu --collapse">
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="pickupMenu">pickup
+              <div id="pickupMenu" class="header__submenu --collapse">
                 <div class="header__submenuInner"></div>
+                <template id="pickupMenuTemplate">
+                  <figure class="header__pickupMenuItem"><a href="#">
+                    <img src="">
+                  </a></figure>
+                </template>
               </div>
             </a></li>
-            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="rankingmenu">ranking
-              <div id="rankingmenu" class="header__submenu --collapse">
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="rankingMenu">ranking
+              <div id="rankingMenu" class="header__submenu --collapse">
                 <div class="header__submenuInner"></div>
+                <template id="rankingMenuTemplate">
+                  <li class="header__rankingMenuItem">
+                    <figure class="header__rankingMenuImage">
+                      <a href="">
+                        <img src="">
+                      </a>
+                    </figure>
+                    <div class="header__rankingMenuInfo">
+                      <a href="">
+                        <span class="header__rankingMenuName"></span>
+                        <span class="header__rankingMenuPrice"></span>
+                      </a>
+                    </div>
+                  </li>
+                </template>
               </div></a></li>
-            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="itemsmenu">items
-              <div id="itemsmenu" class="header__submenu --collapse">
+            <li class="header__primaryMenuItem"><a href="#" data-toggle="submenu" data-target="itemsMenu">items
+              <div id="itemsMenu" class="header__submenu --collapse">
                 <div class="header__submenuInner"></div>
               </div></a></li>
             <li class="header__primaryMenuItem"><a href="#">brand</a></li>
@@ -383,6 +403,6 @@
         </div>
       </div>
     </footer>
-    <script src="./init.js"></script>
+    <script src="./js/init.js" type="module"></script>
   </body>
 </html>

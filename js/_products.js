@@ -60,8 +60,8 @@ export default class Products {
       span2.textContent = `${item.itemPrice.toLocaleString()}円 (税込)`;
 
       this.elem.appendChild(clone);
-
     });
+    
   }
 
 }
