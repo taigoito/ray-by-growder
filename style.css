@@ -881,7 +881,7 @@ button, input, select, textarea {
 .footer__primaryInner {
   display: flex;
   flex-flow: row wrap;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   border-top: 2px solid #a8a8a8;
 }
 .footer__secondary {
@@ -891,7 +891,7 @@ button, input, select, textarea {
   display: flex;
   flex-flow: row wrap;
   gap: 3rem;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
 }
 .footer__generalInfo {
   flex: 0 0 75%;
