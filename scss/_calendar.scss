@@ -3,7 +3,7 @@
  */
 
 .calendar {
-  width: 18rem;
+  width: clamp(15rem, 100%, 18rem);
   margin: 0.75rem auto;
 
   &__view {
