@@ -3,5 +3,67 @@
  */
 
 .brand {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 
+  &__inner {
+    @extend %__inner;
+  }
+
+  &__heading {
+    @extend %__heading;
+    text-align: right;
+
+    img {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &__subSection {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 10%;
+
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+
+    &.--switched {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    flex: 45%;
+  }
+
+  &__content {
+    flex: 45%;
+    padding: 0 3rem;
+  }
+
+  &__subHeading {
+    width: 18rem;
+  }
+
+  &__hr {
+    position: absolute;
+    top: auto;
+    left: 0;
+    z-index: -1;
+    width: 55%;
+    border-color: $bodyColor;
+
+    .--switched & {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &__description {
+    padding-top: 1.5rem;
+    line-height: 1.92;
+  }
 }

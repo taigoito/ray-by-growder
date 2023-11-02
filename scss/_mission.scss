@@ -3,6 +3,40 @@
  */
 
 .mission {
+  position: relative;
+  background-color: #f4f4f4;
 
+  &__inner {
+    @extend %__inner;
+  }
+
+  &__image {
+    position: absolute;
+    top: -3rem;
+    left: 55%;
+    width: min(45%, 48rem);
+  }
+
+  &__container {
+    width: 45%;
+    padding: 6rem 0;
+  }
+
+  &__heading {
+    margin: 0 auto;
+    color: #a8a8a8;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__lead {
+    margin: 3rem 0;
+    font-size: 1.33rem;
+  }
+
+  &__content {
+    margin: 3rem 0;
+    line-height: 1.92;
+  }
 }
  

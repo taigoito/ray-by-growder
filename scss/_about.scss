@@ -3,6 +3,24 @@
  */
 
 .about {
+  padding: 6rem 1.5rem;
 
+  &__logo {
+    width: 12rem;
+    margin: auto;
+  }
+
+  &__heading {
+    margin: 3rem auto 1.5rem;
+    color: #a8a8a8;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    text-align: center;
+    line-height: 1.92;
+  }
 }
  

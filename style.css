@@ -63,24 +63,24 @@ button, input, select, textarea {
   padding: 1.5rem 0;
 }
 
-.footer__secondaryInner, .footer__primaryInner, .pickup__inner, .recommend__inner, .concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__submenuInner, .header__topInner, .header__bottomInner {
+.footer__secondaryInner, .footer__primaryInner, .brand__inner, .mission__inner, .pickup__inner, .recommend__inner, .concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__submenuInner, .header__topInner, .header__bottomInner {
   width: clamp(60rem, 100%, 75rem);
   margin: auto;
   padding: 0 clamp(1.2rem, 2%, 1.5rem);
 }
 
-.pickup__heading, .recommend__heading, .ranking__heading, .newarrival__heading, .news__heading, .pageHeader__pageTitle {
+.brand__heading, .pickup__heading, .recommend__heading, .ranking__heading, .newarrival__heading, .news__heading, .pageHeader__pageTitle {
   margin: 1.5rem 0;
 }
-.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
+.brand__heading img, .pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img, .brand__heading span, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
   display: block;
   padding-left: 1.5rem;
 }
-.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img {
+.brand__heading img, .pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img {
   width: auto;
   height: 5.25rem;
 }
-.pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
+.brand__heading span, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
   color: #a8a8a8;
   font-size: 1rem;
 }
@@ -506,7 +506,7 @@ button, input, select, textarea {
  */
 .news {
   padding: 4.5rem 0;
-  background-color: #efefef;
+  background-color: #f4f4f4;
 }
 .news__inner {
   position: relative;
@@ -719,8 +719,8 @@ button, input, select, textarea {
 .concept__mainImage {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50%;
+  left: 50%;
+  width: min(50%, 48rem);
 }
 .concept__heading img, .concept__heading span {
   display: inline-block;
@@ -906,12 +906,110 @@ button, input, select, textarea {
 /*
  * Concept - About
  */
+.about {
+  padding: 6rem 1.5rem;
+}
+.about__logo {
+  width: 12rem;
+  margin: auto;
+}
+.about__heading {
+  margin: 3rem auto 1.5rem;
+  color: #a8a8a8;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about__content {
+  text-align: center;
+  line-height: 1.92;
+}
+
 /*
  * Concept - Mission
  */
+.mission {
+  position: relative;
+  background-color: #f4f4f4;
+}
+.mission__image {
+  position: absolute;
+  top: -3rem;
+  left: 55%;
+  width: min(45%, 48rem);
+}
+.mission__container {
+  width: 45%;
+  padding: 6rem 0;
+}
+.mission__heading {
+  margin: 0 auto;
+  color: #a8a8a8;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.mission__lead {
+  margin: 3rem 0;
+  font-size: 1.33rem;
+}
+.mission__content {
+  margin: 3rem 0;
+  line-height: 1.92;
+}
+
 /*
  * Concept - Brand
  */
+.brand {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.brand__heading {
+  text-align: right;
+}
+.brand__heading img {
+  margin-left: auto;
+  margin-right: 0;
+}
+.brand__subSection {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 10%;
+}
+.brand__subSection:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.brand__subSection.--switched {
+  flex-direction: row;
+}
+.brand__image {
+  flex: 45%;
+}
+.brand__content {
+  flex: 45%;
+  padding: 0 3rem;
+}
+.brand__subHeading {
+  width: 18rem;
+}
+.brand__hr {
+  position: absolute;
+  top: auto;
+  left: 0;
+  z-index: -1;
+  width: 55%;
+  border-color: #333333;
+}
+.--switched .brand__hr {
+  left: auto;
+  right: 0;
+}
+.brand__description {
+  padding-top: 1.5rem;
+  line-height: 1.92;
+}
+
 /*
  * Review
  */
