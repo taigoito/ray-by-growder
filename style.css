@@ -63,7 +63,7 @@ button, input, select, textarea {
   padding: 1.5rem 0;
 }
 
-.footer__secondaryInner, .footer__primaryInner, .brand__inner, .mission__inner, .pickup__inner, .recommend__inner, .concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__submenuInner, .header__topInner, .header__bottomInner {
+.footer__secondaryInner, .footer__primaryInner, .review__inner, .brand__inner, .mission__inner, .pickup__inner, .recommend__inner, .concept__inner, .ranking__inner, .newarrival__inner, .news__inner, .header__submenuInner, .header__topInner, .header__bottomInner {
   width: clamp(60rem, 100%, 75rem);
   margin: auto;
   padding: 0 clamp(1.2rem, 2%, 1.5rem);
@@ -85,7 +85,7 @@ button, input, select, textarea {
   font-size: 1rem;
 }
 
-.footer__button, .recommend__viewmore, .concept__viewmore, .newarrival__viewmore {
+.footer__button, .review__viewmore, .review__button, .recommend__viewmore, .concept__viewmore, .newarrival__viewmore {
   position: relative;
   display: block;
   width: 13.5rem;
@@ -99,7 +99,7 @@ button, input, select, textarea {
   line-height: 3rem;
   text-transform: capitalize;
 }
-.footer__button::after, .recommend__viewmore::after, .concept__viewmore::after, .newarrival__viewmore::after {
+.footer__button::after, .review__viewmore::after, .review__button::after, .recommend__viewmore::after, .concept__viewmore::after, .newarrival__viewmore::after {
   content: "";
   position: absolute;
   top: 0;
@@ -110,11 +110,11 @@ button, input, select, textarea {
   margin: auto;
   background: url("./assets/svg/icon_right.svg") no-repeat 50% 50%/contain scroll;
 }
-.footer__button:hover, .recommend__viewmore:hover, .concept__viewmore:hover, .newarrival__viewmore:hover {
+.footer__button:hover, .review__viewmore:hover, .review__button:hover, .recommend__viewmore:hover, .concept__viewmore:hover, .newarrival__viewmore:hover {
   background-color: #1b2a44;
   color: #ffffff;
 }
-.footer__button:hover::after, .recommend__viewmore:hover::after, .concept__viewmore:hover::after, .newarrival__viewmore:hover::after {
+.footer__button:hover::after, .review__viewmore:hover::after, .review__button:hover::after, .recommend__viewmore:hover::after, .concept__viewmore:hover::after, .newarrival__viewmore:hover::after {
   filter: brightness(2);
 }
 
@@ -1013,6 +1013,72 @@ button, input, select, textarea {
 /*
  * Review
  */
+.review__header {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+.review__image {
+  width: 7.5rem;
+  margin: auto;
+}
+.review__mainLead {
+  font-size: 1.33rem;
+}
+.review__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1.5rem 2.25rem;
+  border: 1px solid #a8a8a8;
+}
+.review__itemMain {
+  flex: 0 0 80%;
+}
+.review__itemImage {
+  flex: 0 0 20%;
+}
+.review__itemHead {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem 0;
+}
+.review__itemReviewRate {
+  flex: 0 0 50%;
+  padding: 0 3rem;
+  border-right: 1px solid #1b2a44;
+  color: gold;
+  font-size: 1.17rem;
+  text-align: right;
+  letter-spacing: 0.1em;
+}
+.review__itemCustomer {
+  flex: 0 0 50%;
+  padding: 0 3rem;
+  text-align: left;
+}
+.review__itemBody {
+  height: 6.75rem;
+  padding-right: 2.25rem;
+  border-bottom: 1px solid #a8a8a8;
+  line-height: 1.92;
+}
+.review__itemFoot {
+  display: flex;
+  gap: 10%;
+  padding: 1.5rem 0;
+}
+.review__itemInfo {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.review__itemName, .review__itemPrice {
+  padding: 0.75rem 0;
+}
+.review__viewmore {
+  margin: 3rem 0 6rem auto;
+}
+
 /*
  * Footer
  */
