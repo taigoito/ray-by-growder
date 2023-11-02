@@ -69,18 +69,18 @@ button, input, select, textarea {
   padding: 0 clamp(1.2rem, 2%, 1.5rem);
 }
 
-.pickup__heading, .recommend__heading, .ranking__heading, .newarrival__heading, .news__heading {
+.pickup__heading, .recommend__heading, .ranking__heading, .newarrival__heading, .news__heading, .pageHeader__pageTitle {
   margin: 1.5rem 0;
 }
-.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span {
+.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img, .pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
   display: block;
   padding-left: 1.5rem;
 }
-.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img {
+.pickup__heading img, .recommend__heading img, .ranking__heading img, .newarrival__heading img, .news__heading img, .pageHeader__pageTitle img {
   width: auto;
   height: 5.25rem;
 }
-.pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span {
+.pickup__heading span, .recommend__heading span, .ranking__heading span, .newarrival__heading span, .news__heading span, .pageHeader__pageTitle span {
   color: #a8a8a8;
   font-size: 1rem;
 }
@@ -369,6 +369,33 @@ button, input, select, textarea {
  */
 .hero {
   padding-bottom: 7.5rem;
+}
+
+/*
+ * Page Header
+ */
+.pageHeader {
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  align-items: flex-end;
+}
+.pageHeader.--concept {
+  background: url("./assets/header/headerCoverImage00.jpg") no-repeat 50% 50%/cover scroll;
+}
+.pageHeader.--review {
+  background: url("./assets/header/headerCoverImage01.jpg") no-repeat 50% 50%/cover scroll;
+}
+.pageHeader__pageTitle {
+  margin: 3rem auto;
+  text-align: center;
+}
+.pageHeader__pageTitle img {
+  margin: auto;
+  padding: 0;
+}
+.pageHeader__pageTitle span {
+  color: #1b2a44;
 }
 
 /**
@@ -876,6 +903,18 @@ button, input, select, textarea {
   font-size: 0.875rem;
 }
 
+/*
+ * Concept - About
+ */
+/*
+ * Concept - Mission
+ */
+/*
+ * Concept - Brand
+ */
+/*
+ * Review
+ */
 /*
  * Footer
  */

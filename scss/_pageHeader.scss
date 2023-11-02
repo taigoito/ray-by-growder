@@ -1,0 +1,33 @@
+/*
+ * Page Header
+ */
+
+.pageHeader {
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  align-items: flex-end;
+
+  &.--concept {
+    background: url("./assets/header/headerCoverImage00.jpg") no-repeat 50% 50% / cover scroll;
+  }
+
+  &.--review {
+    background: url("./assets/header/headerCoverImage01.jpg") no-repeat 50% 50% / cover scroll;
+  }
+
+  &__pageTitle {
+    @extend %__heading;
+    margin: 3rem auto;
+    text-align: center;
+
+    img {
+      margin: auto;
+      padding: 0;
+    }
+
+    span {
+      color: $primaryColor;
+    }
+  }
+}

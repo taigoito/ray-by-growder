@@ -16,7 +16,6 @@ export default class Products {
     // 要素
     this.elem = options.elem || document.querySelector(`.${this.elemName}`);
     this.template = options.template || document.getElementById(`${this.elemName}Template`);
-    if (!this.elem || !this.template) return;
 
     // データを取得してレンダリング
     this.fetch(url);
@@ -36,6 +35,8 @@ export default class Products {
 
 
   render(items) {
+    if (!this.elem || !this.template) return;
+    
     items.forEach((item) => {
       item = item.Item;
       //console.log(item);

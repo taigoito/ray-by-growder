@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAY by Growder</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__topInner">
+        <h1 class="header__logo"><img src="./assets/svg/logo_ray.svg"></h1>
+        <div class="header__sub">
+          <ul class="header__socialLinks">
+            <li class="header__socialLink --rakuten">
+              <img src="./assets/svg/icon_rakuten.svg">
+            </li>
+            <li class="header__socialLink --line">
+              <img src="./assets/svg/icon_line.svg">
+            </li>
+            <li class="header__socialLink --instagram">
+              <img src="./assets/svg/icon_instagram.svg">
+            </li>
+          </ul>
+          <ul class="header__secondaryMenu">
+            <li class="header__secondaryMenuItem --cart">
+              <img src="./assets/svg/icon_cart.svg">
+            </li>
+            <li class="header__secondaryMenuItem --mail">
+              <img src="./assets/svg/icon_mail.svg">
+            </li>
+          </ul>
+          <div class="header__search">
+            <input class="header__searchInput" type="search" placeholder="何をお探しですか？">
+          </div>
+        </div>
+      </div>
+      <div class="header__bottomInner">
+        <nav class="header__nav">
+          <ul class="header__primaryMenu">
+            <li class="header__primaryMenuItem"><a href="#">concept</a></li>
+            <li class="header__primaryMenuItem"><span data-toggle="submenu" data-target="pickupMenu">pickup
+              <div id="pickupMenu" class="header__submenu --collapse">
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner --collapse"></div>
+                  <template id="pickupMenuTemplate">
+                    <figure class="header__pickupMenuItem"><a href="#">
+                      <img src="">
+                    </a></figure>
+                  </template>
+                </div>
+              </div>
+            </span></li>
+            <li class="header__primaryMenuItem"><span data-toggle="submenu" data-target="rankingMenu">ranking
+              <div id="rankingMenu" class="header__submenu --collapse">
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner --collapse"></div>
+                  <template id="rankingMenuTemplate">
+                    <li class="header__rankingMenuItem">
+                      <figure class="header__rankingMenuImage">
+                        <a href="">
+                          <img src="">
+                        </a>
+                      </figure>
+                      <div class="header__rankingMenuInfo">
+                        <a href="">
+                          <span class="header__rankingMenuName"></span>
+                          <span class="header__rankingMenuPrice"></span>
+                        </a>
+                      </div>
+                    </li>
+                  </template>
+                </div>
+              </div>
+            </span></li>
+            <li class="header__primaryMenuItem"><span data-toggle="submenu" data-target="itemsMenu">items
+              <div id="itemsMenu" class="header__submenu --collapse">
+                <div class="header__submenuWrap">
+                  <div class="header__submenuInner --collapse">
+                    <div class="header__itemsMenuCol">
+                      <h4 class="header__itemsMenuHeading">BOYS</h4>
+                      <ul class="header__itemsMenuCategories">
+                        <li class="header__itemsMenuCategory"><a href="#">Jackets & Conats</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Knitwear</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Leggings & Pants</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Onepieces</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">OrganicCotton Essntials</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Overalls</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Playsuits & Rompers</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Singlets</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__itemsMenuCol">
+                      <h4 class="header__itemsMenuHeading">GIRLS</h4>
+                      <ul class="header__itemsMenuCategories">
+                        <li class="header__itemsMenuCategory"><a href="#">Jackets & Conats</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Knitwear</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Leggings & Pants</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Onepieces</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">OrganicCotton Essntials</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Overalls</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Playsuits & Rompers</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Singlets</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__itemsMenuCol">
+                      <h4 class="header__itemsMenuHeading">BABY</h4>
+                      <ul class="header__itemsMenuCategories">
+                        <li class="header__itemsMenuCategory"><a href="#">Jackets & Conats</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Knitwear</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Leggings & Pants</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Onepieces</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">OrganicCotton Essntials</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Overalls</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Playsuits & Rompers</a></li>
+                        <li class="header__itemsMenuCategory"><a href="#">Singlets</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span></li>
+            <li class="header__primaryMenuItem"><a href="#">brand</a></li>
+            <li class="header__primaryMenuItem"><a href="#">company</a></li>
+            <li class="header__primaryMenuItem"><a href="#">guide</a></li>
+            <li class="header__primaryMenuItem"><a href="#">review</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <header id="pageHeader" class="pageHeader --review">
+        <h2 class="pageHeader__pageTitle">
+          <img src="./assets/svg/title_review.svg">
+            <span>[ レビュー ]</span>
+        </h2>
+      </header>
+      <section id="review" class="review">
+        
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer__primary">
+        <div class="footer__primaryInner">
+          <div class="footer__generalInfo">
+            <aside class="footer__shop">
+              <h3 class="footer__primaryHeading">shop</h3>
+              <div class="footer__contentWrap">
+                <div class="footer__content1">
+                  <img class="footer__logo" src="./assets/svg/logo_ray.svg">
+                  <ul class="footer__socialLinks">
+                    <li class="footer__socialLink --rakuten">
+                      <img src="./assets/svg/icon_rakuten_sm.svg">
+                    </li>
+                    <li class="footer__socialLink --line">
+                      <img src="./assets/svg/icon_line_sm.svg">
+                    </li>
+                    <li class="footer__socialLink --instagram">
+                      <img src="./assets/svg/icon_instagram_sm.svg">
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__content2">
+                  <p>〒336-0022 埼玉県さいたま市南区白幡3丁目6-7-2階</p>
+                  <p>営業時間: 10:00 ～ 17:00【土日祝除く】</p>
+                  <p>営業日: 土日祝他（営業日は当店カレンダー参照）</p>
+                  <p>Tel: 050-8880-5666 Mail: xxxxxxxx@xxxx.xx</p>
+                  <a href="#" class="footer__button">shop review</a>
+                </div>
+              </div>
+            </aside>
+            <aside class="footer__guide">
+              <h3 class="footer__primaryHeading">guide</h3>
+              <ul class="footer__submenu1">
+                <li class="footer__submenu1Item"><a href="#">ショッピングガイド</a></li>
+                <li class="footer__submenu1Item"><a href="#">ご利用規約</a></li>
+              </ul>
+            </aside>
+            <aside class="footer__help">
+              <h3 class="footer__primaryHeading">help</h3>
+              <ul class="footer__submenu1">
+                <li class="footer__submenu1Item"><a href="#">よくある質問</a></li>
+                <li class="footer__submenu1Item"><a href="#">お問い合わせ</a></li>
+              </ul>
+            </aside>
+            <aside class="footer__company">
+              <h3 class="footer__primaryHeading">company</h3>
+              <ul class="footer__submenu1">
+                <li class="footer__submenu1Item"><a href="#">会社概要</a></li>
+                <li class="footer__submenu1Item"><a href="#">特定商取引法に基づく表記</a></li>
+              </ul>
+            </aside>
+            <aside class="footer__privacy">
+              <h3 class="footer__primaryHeading">privacy policy</h3>
+              <p>お客様から頂いた個人情報は商品の発送とご連絡以外には一切使用致しません。
+                <br>当社が責任をもって安全に蓄積・管理し、第三者に譲渡・提供することはございません。</p>
+            </aside>
+          </div>
+          <div class="footer__businessDay">
+            <aside class="footer__calendar">
+              <h3 class="footer__primaryHeading">calendar</h3>
+              <div class="calendar">
+                <div class="calendar__control">
+                  <span class="calendar__currentText"></span>
+                </div>
+                <table class="calendar__view">
+                  <thead class="calendar__head"></thead>
+                  <tbody class="calendar__body"></tbody>
+                </table>
+              </div>
+              <div class="calendar">
+                <div class="calendar__control">
+                  <span class="calendar__currentText"></span>
+                </div>
+                <table class="calendar__view">
+                  <thead class="calendar__head"></thead>
+                  <tbody class="calendar__body"></tbody>
+                </table>
+              </div>
+              <div class="calendar__description">
+                <p><span></span>受注・発送業務のみ※問い合わせ休業</p>
+                <p>※土日祝のお問い合わせ対応につきましては返信までお時間を頂く場合がございます。</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div class="footer__secondary">
+        <div class="footer__secondaryInner">
+          <aside class="footer__payment">
+            <div class="footer__secondaryHead">
+              <h3 class="footer__secondaryHeading">お支払い</h3>
+              <a href="#" class="footer__detailButton">詳細はこちら</a>
+            </div>
+            <div class="footer__secondaryBody">
+              <p>お支払いは以下の中からお選び頂けます。</p>
+              <ul>
+                <li>クレジットカード</li>
+                <li>銀行振込</li>
+                <li>Apple Pay</li>
+                <li>コンビニ決済（セブンイレブン等）</li>
+                <li>ペイジー</li>
+                <li>PayPal</li>
+                <li>Alipay</li>
+              </ul>
+            </div>
+          </aside>
+          <aside class="footer__delivery">
+            <div class="footer__secondaryHead">
+              <h3 class="footer__secondaryHeading">配送について</h3>
+              <a href="#" class="footer__detailButton">詳細はこちら</a>
+            </div>
+            <div class="footer__secondaryBody">
+              <p>配送は下記いずれかの配送業者様にお任せしております。</p>
+              <ul>
+                <li>ヤマト運輸</li>
+                <li>ゆうパック</li>
+                <li>Rakuten EXPRESS</li>
+              </ul>
+              <p>※ご注意
+                <br>ご指定を頂いている場合でも、在庫状況・天候・道路状況などにより配送が遅れる場合や、郡部・山間部・離島などの一部地域は指定日時・時間がご指定頂けない場合がございます。</p>
+            </div>
+          </aside>
+          <aside class="footer__customer">
+            <div class="footer__secondaryHead">
+              <h3 class="footer__secondaryHeading">返品・交換・キャンセル</h3>
+              <a href="#" class="footer__detailButton">詳細はこちら</a>
+            </div>
+            <div class="footer__secondaryBody">
+              <p>■返品・交換について
+                <br>ご注文頂いた商品と異なる商品が届いた場合や不良品･破損商品については、交換をさせて頂きますので、商品到着後5日以内にお問い合わせフォームよりご連絡ください。
+                <br>着用・洗濯・タグの切り離し品につきましては、返品交換対象外となりますのでご注意ください。</p>
+              <p>■ご注文のキャンセルについて
+                <br>お客様都合によるキャンセル、返品、交換は出来かねます。ご注文間違いなどくれぐれもご注意ください。</p>
+            </div>
+          </aside>
+          <aside class="footer__banners">
+            <div class="footer__banner --growder"><a href="#">
+              <p>モバイル製品、スマホアクセサリー、電子小物の総合ショップ</p>
+              <img src="./assets/png/banner_growder.png">
+            </a></div>
+            <div class="footer__banner --review"><a href="#">
+              <p>気になる商品のレビューはこちら</p>
+              <img src="./assets/png/banner_review.png">
+            </a></div>
+          </aside>
+        </div>
+      </div>
+    </footer>
+    <script src="./init.js"></script>
+  </body>
+</html>

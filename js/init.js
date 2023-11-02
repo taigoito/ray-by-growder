@@ -49,16 +49,20 @@ new Ranking(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?f
 
 // Recommend
 const recommendSlider = document.getElementById('recommendSlider');
-const recommendArg = {
-  count: 8,
-  elemName: 'recommend',
-  elem: recommendSlider.querySelector('.slider__inner'),
-  template: document.getElementById('recommendTemplate')
-};
-const callback = () => {
-  new RecommendSlider(recommendSlider);
+if (recommendSlider) {
+  const recommendArg = {
+    count: 8,
+    elemName: 'recommend',
+    elem: recommendSlider.querySelector('.slider__inner'),
+    template: document.getElementById('recommendTemplate')
+  };
+  const callback = () => {
+    new RecommendSlider(recommendSlider);
+  }
+  new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`, recommendArg, callback);
+} else {
+  new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`);
 }
-new Products(`https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json&shopCode=${shopCode}&sort=standard&applicationId=${applicationId}`, recommendArg, callback);
 
 // Pickup
 import Pickup from './_pickup.js';
