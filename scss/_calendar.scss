@@ -3,7 +3,6 @@
  */
 
 .calendar {
-  width: clamp(15rem, 100%, 18rem);
   margin: 0.75rem auto;
 
   &__view {
@@ -18,8 +17,8 @@
     }
 
     th, td {
-      width: 40px;
-      height: 24px;
+      width: 2.25rem;
+      height: 1.5rem;
       border-right: 1px solid #999999;
       color: $primaryColor;
       font-weight: 700;

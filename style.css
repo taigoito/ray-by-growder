@@ -11,13 +11,14 @@
 html {
   font-size: 16px;
 }
-@media (max-width: 599.9px) {
+@media (max-width: 999.9px) {
   html {
-    font-size: 3.84vw;
+    font-size: 1.6vw;
   }
 }
 
 body {
+  min-width: 60rem;
   margin: 0;
   background-color: #ffffff;
   color: #333333;
@@ -1041,7 +1042,6 @@ button, input, select, textarea {
  * Calendar
  */
 .calendar {
-  width: clamp(15rem, 100%, 18rem);
   margin: 0.75rem auto;
 }
 .calendar__view {
@@ -1054,8 +1054,8 @@ button, input, select, textarea {
   border-top: 1px solid #999999;
 }
 .calendar__view th, .calendar__view td {
-  width: 40px;
-  height: 24px;
+  width: 2.25rem;
+  height: 1.5rem;
   border-right: 1px solid #999999;
   color: #1b2a44;
   font-weight: 700;
